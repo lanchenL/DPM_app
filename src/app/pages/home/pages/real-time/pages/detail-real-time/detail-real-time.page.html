@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="ion-text-center">Detail Page</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button text="返回"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content style="overflow: unset;">
+  <div class="container">
+
+    
+    <!---下拉框容器-->
+    <div class="allSelectContainer">
+      <!-- line 下拉框部分 -->
+      <div class="sLineContainer">
+        <label class="selectLabel">Line:</label>
+        <ion-select  multiple="true" interface="ion-popover" class="select" [(ngModel)]="sline" (ngModelChange)="onLineValueChanged($event)">
+          <!-- ng for循环生成下拉框子item -->
+          <ion-select-option *ngFor="let item of lineDataList" value={{item.data}} selected="true">{{item.data}}</ion-select-option>
+          
+        </ion-select>
+      </div>
+      <!-- Period 日期选择下拉框部分 -->
+      <div class="sDateContainer">
+        <label class="selectLabel">Period:</label>
+        <ion-input class="select" type="date" [(ngModel)]="dateStart"  (ionChange)="onDateValueChanged($event)"></ion-input>
+        <label style="margin-left: 2%;margin-bottom: 2%;" class="selectLabel">——</label>
+        <ion-input class="select" type="date" [(ngModel)]="dateEnd" (ionChange)="onDateValueChanged($event)" ></ion-input>
+
+      </div>
+    </div>
+
+
+    <!-- <label style="font-size: 32px;">{{dateData}}</label> -->
+    <p class="title">Entire</p>
+    <div class="mainChartContainer">
+      <app-pie-chart1 [title]="mainChartData.title" [topNumber]="mainChartData.topNumber"
+        [bomNumber]="mainChartData.bomNumber" [isRed]="mainChartData.isRed" [titleSize]="titleSize"
+        [numSize]="numSize">
+      </app-pie-chart1>
+    </div>
+
+    <p class="title">Sub Group</p>
+
+    <div class="subChartContainer">
+      <app-pie-chart1 class="subChart" *ngFor="let item of subChartDataList" [title]="item.title"
+        [topNumber]="item.topNumber" [isRed]="item.isRed" [bomNumber]="item.bomNumber" [titleSize]="titleSize"
+        [numSize]="numSize"></app-pie-chart1>
+    </div>
+
+  </div>
+</ion-content>

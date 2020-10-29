@@ -1,0 +1,17 @@
+
+<div id="box">
+    <div class="u" id="btn-1" [title]=" 'Overdue:'+ overdue" [title]=" 'Overdue:'+ overdue1" ng-click="uShow('','show')">
+        <ion-text id="overdue-text">{{overdue}}</ion-text>
+        <ion-label *ngIf="!hideLabels" class="v" id="overdue-label">Overdue</ion-label>
+    </div>
+    <div class="u" id="btn-2" [title]=" 'Ongoing:'+ ongoing" [title]=" 'Ongoing:'+ ongoing1" ng-click="uShow('','show')">
+        <ion-text id="ongoing-text">{{ongoing}}</ion-text>
+        <ion-label *ngIf="!hideLabels" class="v" id="overgoing-label">Ongoing</ion-label>
+    </div>
+    <div class="u" id="btn-3" [title]=" 'Open:'+ open" [title]=" 'Open:'+ open1" ng-click="uShow('','show')">
+        <ion-text id="open-text">{{open}}</ion-text>
+        <ion-label *ngIf="!hideLabels" class="v" id="open-label">Open</ion-label>
+        <div *ngIf="!hiderectangle" id="rectangle"></div> <!-- 长方形引脚 -->
+    </div>
+    <ion-label id="title-label">{{title}}</ion-label>
+</div>

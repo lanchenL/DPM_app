@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text="返回"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">Meeting</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+      <table>
+        <tr>
+          <th class="line" scope="col">Date</th>
+          <th scope="col">Description</th>
+        </tr>   
+        <tr class="trcss" *ngFor="let meeting of meetings">
+          <td class="line">{{meeting.date}}</td>
+          <td>{{meeting.description}}</td>
+        </tr>
+      </table>
+</ion-content>

@@ -1,0 +1,87 @@
+.container{
+    width: 100%;
+    height: 100%;
+    display: block;
+    overflow: unset;
+    
+    
+}
+
+.mainChartContainer{
+    width: 96%;
+    height: 28%;
+    margin-left: 2%;;
+}
+
+.title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    height: 4%;
+
+}
+.allSelectContainer{
+    width: 96%;
+    height: 12%;
+    margin-left: 2%;
+    display: flex;
+    flex-direction: column;
+
+}
+.selectContainer{
+    height: 100%;
+    flex: 0 0 50%;
+    display: flex;
+    flex-direction: row;
+
+}
+.sLineContainer{
+    width: 100%;
+    flex: 0 0 50%;
+    display: flex;
+    flex-direction: row;
+}
+
+.sDateContainer{
+    width: 100%;
+    flex: 0 0 50%;
+    display: flex;
+    flex-direction: row;
+}
+
+.selectLabel{
+
+    align-self: center;
+    height: 30%;
+    width: auto;
+    font-size: 12px;
+    
+}
+.select{
+    width: 80%;
+    margin-left: 2%;
+
+    height: 60%;
+    align-self: center;;
+    border: 2px solid  rgba(0, 0, 0, 0.12);
+    border-radius: 8px;
+    // 字体大小
+    font-size: 12px;
+}
+
+.subChartContainer{
+    width: 96%;
+    height: 44%;
+    margin-left: 2%;
+    
+    display: flex;
+    flex-flow: row wrap;
+    overflow: auto;
+}
+.subChart{
+    height: 50%;
+    flex: 0 0 49%;
+
+}

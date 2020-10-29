@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text="返回"></ion-back-button>
+    </ion-buttons>
+    <ion-title id="actionspart" >actionspart</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="a">
+    <app-action class="b" *ngFor="let item of items" [title]="item.title" [overdue]="item.overdue"
+      [ongoing]="item.ongoing" [open]="item.open" hideLabels="true" [open1]="item.open1" [ongoing1]="item.ongoing1" [overdue1]="item.overdue1">
+    </app-action>
+  </div>
+</ion-content>

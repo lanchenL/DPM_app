@@ -1,0 +1,32 @@
+.ion-text-center{
+    float: left;
+}
+table{
+    width: 90%;
+    margin: 30px auto;
+    font-size:25px;
+    border: 1px solid gray;
+}
+th{
+    background-color: rgb(45, 136, 189);
+    border-right: 1px solid gray;
+    color: white;
+    text-align: left;
+    height: 60px;
+    padding-left: 15px;
+}
+td{
+    height: 50px;
+    padding-left: 15px;
+    border-right: 1px solid gray;
+}
+tr{
+    border-bottom: solid gray 1px;
+}
+.line{
+    width: 30%;
+}
+
+.trcss:hover{
+    background-color: rgb(233, 227, 227,0.3);
+}

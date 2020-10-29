@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="ion-text-center">Real Time Page</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button text="返回"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-card class="ionCard">
+    <ion-header class="ionCardHeader">
+      Feature
+    </ion-header>
+
+    <ion-card-content class="ionCardContent" >
+      <!-- 还是DIV香，设置flex后以及可滑动 overflow即可-->
+      <div class="pieChartContainer">
+
+        <app-pie-chart1 class="pieChart1" *ngFor="let item of pieChartDataList;let i = index" [title]="item.title"
+          [topNumber]="item.topNumber" [bomNumber]="item.bomNumber" [isRed]="item.isRed" [titleSize]="titleSize" [numSize]="numSize" (clickEmitter)="onClickPieChart($event,i)" >
+        </app-pie-chart1>
+
+      </div>
+
+
+
+    </ion-card-content>
+
+
+  </ion-card>
+</ion-content>

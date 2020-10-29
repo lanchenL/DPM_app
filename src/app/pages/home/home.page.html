@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text="返回"></ion-back-button>
+    </ion-buttons>
+    <ion-title>home</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card [routerLink]="['/home/actions']" >
+    <ion-card-title class="card">actions</ion-card-title>
+  </ion-card>
+  <ion-card [routerLink]="['/home/meeting']" >
+    <ion-card-title class="card">meeting</ion-card-title>
+  </ion-card>
+  <ion-card [routerLink]="['/home/non-real-time']" >
+    <ion-card-title class="card">non-real-time</ion-card-title>
+  </ion-card>
+  <ion-card [routerLink]="['/home/real-time']" >
+    <ion-card-title class="card">real-time</ion-card-title>
+  </ion-card>
+  <ion-card [routerLink]="['/home/calendar']" >
+    <ion-card-title class="card">calendar</ion-card-title>
+  </ion-card>
+</ion-content>

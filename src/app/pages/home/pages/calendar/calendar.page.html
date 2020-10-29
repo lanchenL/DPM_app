@@ -1,0 +1,24 @@
+<ion-header class="header">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text="返回"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="title">calendar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <table class="calendar" border="1px">
+    <tr class="table-header">
+      <th id="date">Date</th>
+      <th id="desc">Description</th>
+    </tr>
+      <tr class="table-content" *ngFor="let calendar of calendars" >
+        <td>{{calendar.date}}</td>
+        <td>{{calendar.description}}</td>
+      </tr>
+  </table>
+  <div echarts ></div>
+
+</ion-content>

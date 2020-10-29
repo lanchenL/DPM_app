@@ -1,0 +1,132 @@
+
+.a{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 相当于 1fr 1fr 1fr */
+    grid-template-rows: repeat(2, 1fr); /* fr单位可以将容器分为几等份 */
+    grid-gap: 30%; /* grid-column-gap 和 grid-row-gap的简写 */
+    grid-auto-flow: row;
+
+    width: 75%;
+    height: 200px;
+    margin: 0 auto;
+    text-align: center;
+
+    flex-direction: row;
+    justify-content: space-around;//按空间分布
+    align-items: flex-end;
+    
+
+}
+.a div{
+    width: 75%;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.b{
+ text-align: center;
+} 
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// div{
+//     font-size:24px;
+// }
+// #bigbox{
+//     display: flex;
+//     flex-direction: column;
+//     display:inline;
+
+// }
+// #bigbox1{
+//     flex-direction: row;
+//     justify-content: space-around;//按空间分布
+//     display: flex;
+//     align-items: flex-end;
+//     margin:35px;
+// }
+// #bigbox2{
+//     flex-direction: row;
+//     justify-content: space-around;//按空间分布
+//     display:flex;
+// }
+// .box{
+//     width:100px; 
+//     height:200px; 
+//     flex-direction: row;
+// /*     margin: 0 auto;
+//     text-align: center; */
+// }
+// .box div{
+//       /*  float: center; */
+//         width: 50px;
+//         height: 50px;
+//         text-align: center;
+//         color: rgb(105, 74, 7);
+//         line-height: 50px;
+//         font-size: 10px;
+//         box-sizing: border-box;
+//         cursor: pointer; 
+//         margin: 0 auto;
+//         /* flex-direction: row;  */ 
+// }
+// .box #btn-1{
+//     background-color: #eb6948;    
+// }
+// .box #btn-2{
+//     background-color: #f89320;
+// }
+// .box #btn-3 {
+//     background-color: #f7d84d;
+// }
+// .box .u .v{
+//     line-height: 50px;
+//     float: right;
+//     font-size: 10px;
+//     color:  #eb6948;
+//     clear: both;
+//     position: absolute;
+//     text-shadow:
+//         -1px 0 white,
+//         0 1px white,
+//         1px 0 white,
+//         0 -1px white;
+//     }
+//     ion-label{
+//         font-size: 8px;
+//     }
+//     #bigbox1 .box {
+//         text-align:center
+//     }
+//     #bigbox2 .box {
+//         text-align:center
+//     }
+   
+
+    
+
+   

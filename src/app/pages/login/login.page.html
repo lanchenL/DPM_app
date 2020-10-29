@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="ion-text-center">login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label>请选择厂别</ion-label>
+      <ion-select [value]="plant" okText="确定" cancelText="取消">
+        <ion-select-option *ngFor="let item of sites" value='item.value'> {{item.label}} </ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item color="light">
+      <ion-input placeholder='请输入账号' [(ngModel)]="userId"></ion-input>
+      <ion-icon name="person-outline"></ion-icon>
+    </ion-item>
+
+    <ion-item color="light">
+      <ion-input placeholder='请输入密码' [(ngModel)]="password" type='password'></ion-input>
+      <ion-icon name="keypad-outline"></ion-icon>
+    </ion-item>
+
+    <div class="ion-text-center">
+      <ion-button class="bnt" (click)="login()" [disabled]='isLoading'>
+        登录
+      </ion-button>
+    </div>
+  </ion-list>
+</ion-content>

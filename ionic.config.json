@@ -1,0 +1,7 @@
+{
+  "name": "dpmApp",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="ion-text-center">Non Real Time</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button text="返回"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="circleRingContent">
+  <div class="wrapper">
+    <app-circular-ring class="circleRing" *ngFor="let item of ringData; let i = index" [title]="item.title" [dataTop]="item.dataTop"
+      [dataBottom]="item.dataBottom" (clickEmitter)="onClickCircularRing($event,i)" ></app-circular-ring>
+  </div>
+</ion-content>

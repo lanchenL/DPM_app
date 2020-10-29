@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{mainTitle}}</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button text="返回"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- <p>Total</p> -->
+  <br>
+  <div class="container">
+    <!-- Period 日期选择下拉框部分 -->
+    <div class="selectContainer">
+      <label class="selectLabel">Period:</label>
+      <div class="selectDate">
+        <input class="select" type="date" [(ngModel)]="dateStart" (ionChange)="onDateValueChanged($event)" />-<input
+          class="select" type="date"[(ngModel)]="dateEnd"  (ionChange)="onDateValueChanged($event)" />
+      </div>
+    </div><br>
+    <!-- line 下拉框 -->
+    <div class="selectContainer">
+      <label class="selectLabel">Line:</label>
+      <ion-select class="select1" multiple="true" interface="ion-popover" [(ngModel)]="Line"
+        (ngModelChange)="onLineValueChanged($event)">
+        <ion-select-option *ngFor="let item of Line" value={{item}}>{{item}}</ion-select-option>
+      </ion-select>
+    </div>
+
+
+    <div class="mainChartContainer">
+      <app-circular-ring [title]="mainTitle" [dataTop]="mainDataTop" [dataBottom]="mainDataBottom"></app-circular-ring>
+    </div>
+
+    <p>Sub Plant</p>
+
+    <div class="subChartContainer">
+      <app-circular-ring class="subChart" *ngFor="let item of pieData" [title]="item.title" [dataTop]="item.dataTop"
+        [dataBottom]="item.dataBottom"></app-circular-ring>
+    </div>
+
+  </div>
+</ion-content>

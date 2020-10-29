@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text="返回"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Actions</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- <ion-grid  id="toolbar1" [routerLink]="['/home/actions/actionspart']" > -->
+    <app-action  [routerLink]="['/home/actions/actionspart']" [title]="item.title" [overdue]="item.overdue" [ongoing]="item.ongoing" [open]="item.open" hiderectangle="true"></app-action>
+<!-- </ion-grid> -->
+</ion-content>
+
+

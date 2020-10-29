@@ -1,0 +1,70 @@
+div{
+    font-size:24px;
+}
+#box{
+    width:100px; 
+    height:200px; 
+    margin:100px auto;
+}
+#box div{
+       float: center;
+        width: 100px;
+        height: 100px;
+        text-align: center;
+        color: rgb(105, 74, 7);
+        line-height: 100px;
+        font-size: 18px;
+        font-weight: bold;
+        box-sizing: border-box;
+        cursor: pointer;        
+}
+#box #btn-1{
+    background-color: #eb6948;    
+}
+#box #btn-2{
+    background-color: #f89320;
+}
+#box #btn-3 {
+    background-color: #f7d84d;
+}
+#box .u .v{
+    line-height: 150px;
+    float: right;
+    font-size: 18px;
+    color:  #eb6948;
+    clear: both;
+    position: absolute;
+    text-shadow:
+        -1px 0 white,
+        0 1px white,
+        1px 0 white,
+        0 -1px white;
+    }
+    #box #btn-1 #overdue-label{
+        color:  #eb6948;
+    }
+    #box #btn-2 #ongoing-label{
+        color:  #f89320;
+    }
+    #box #btn-3 #open-label{
+        color:  #f7d84d
+        
+    }
+    #box #title-label{
+        font-size: 16px;
+    }
+
+    /* 引脚样式 */
+    #box .u #rectangle{
+        width: 75px;
+        height: 5px;
+        border-width: 1px 1px 0 1px;
+        border-style: solid;
+        border-color: rgb(122, 116, 116);
+        background-color: transparent;
+        text-align: center;
+        right: -10px;
+        position: relative;    
+    }
+
+    
